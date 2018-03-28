@@ -7,6 +7,16 @@
 ## 如何翻譯
 參閱 [自由軟體翻譯守則](https://docs.google.com/document/d/1Zs4CS_ZjN-imnImq4aEsiVYih8zkIkVZTSQim13_kYg)
 
+當你準備要翻譯某個程式，請開 issues，格式如下：
+
+```
+Issues title: 開始翻譯 [程式名稱]
+Issues content: （寫下翻譯相關說明）
+```
+
+翻譯完成之後，就 Close 這個 issues 即可。
+若您忘記關閉 issues，也會在沒有任何動靜超過 7 天後關閉 issues。
+
 翻譯軟體可使用 POEdit、Lokalize 等工具。翻譯後請透過 `msgfmt` 指令檢查更新檔案。
 ```
 msgfmt -c /your/po/file
