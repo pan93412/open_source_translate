@@ -2,24 +2,23 @@
 # Copyright (C) 2009 Tetralet.
 # This file is distributed under the same license as the dpkg package.
 #
-#
 # Asho Yeh <asho@debian.org.tw>, 2006-2012.
 # imacat <imacat@mail.imacat.idv.tw>, 2012.
-# pan93412 <pan93412@gmail.com>, 2018.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.13\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
 "POT-Creation-Date: 2018-01-17 03:29+0100\n"
-"PO-Revision-Date: 2018-03-28 00:28+0800\n"
-"Last-Translator: pan93412 <pan93412@gmail.com>\n"
-"Language-Team: Chinese <zh-l10n@linux.org.tw>\n"
+"PO-Revision-Date: 2018-03-27 21:18+0800\n"
+"Last-Translator: imacat <imac@mail.imacat.idv.tw>\n"
+"Language-Team: Chinese (traditional) <debian-l10n-chinese@lists.debian.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: lib/dpkg/ar.c
 msgid "failed to fstat archive"
@@ -90,6 +89,7 @@ msgid "character '%c' not allowed (only letters, digits and characters '%s')"
 msgstr "不可有字元 `%c'（只能用英文字母、數字和字元 `%s'）"
 
 #: lib/dpkg/arch.c
+#, fuzzy
 msgctxt "architecture"
 msgid "<none>"
 msgstr "<無>"
@@ -305,7 +305,8 @@ msgstr "壓縮方式不明"
 msgid ""
 "updates directory contains file '%.250s' whose name is too long (length=%d, "
 "max=%d)"
-msgstr "更新目錄中包含了檔案 `%.250s'，但它的名稱太長了（長度為 %d，最大為 %d）"
+msgstr ""
+"更新目錄中包含了檔案 `%.250s'，但它的名稱太長了（長度為 %d，最大為 %d）"
 
 #: lib/dpkg/dbmodify.c
 #, c-format
@@ -403,8 +404,9 @@ msgid "unable to install updated status of '%.250s'"
 msgstr "無法安裝 `%.250s' 的更新狀態"
 
 #: lib/dpkg/deb-version.c
+#, fuzzy
 msgid "format version with too big major component"
-msgstr "版本格式含有太大的主要更新元件"
+msgstr "版本格式中缺主版本"
 
 #: lib/dpkg/deb-version.c
 msgid "format version with empty major component"
@@ -415,8 +417,9 @@ msgid "format version has no dot"
 msgstr "版本格式中缺點 (.) 號"
 
 #: lib/dpkg/deb-version.c
+#, fuzzy
 msgid "format version with too big minor component"
-msgstr "版本格式具有太大的次要更新元件"
+msgstr "版本格式中缺次版本"
 
 #: lib/dpkg/deb-version.c
 msgid "format version with empty minor component"
@@ -483,12 +486,16 @@ msgid "out of memory for new error context"
 msgstr "記憶體不足，無法建立錯誤相關資料"
 
 #: lib/dpkg/ehandle.c
+#, fuzzy
 msgid "error while cleaning up"
-msgstr "在清理時發生錯誤"
+msgstr ""
+"%s: 在清理時發生錯誤：\n"
+" %s\n"
 
 #: lib/dpkg/ehandle.c
+#, fuzzy
 msgid "too many nested errors during error recovery"
-msgstr "在錯誤恢復期間發生太多次的嵌套錯誤"
+msgstr "%s：在錯誤回復時，又發生了更多的層層錯誤！！\n"
 
 #: lib/dpkg/ehandle.c
 msgid "out of memory for new cleanup entry"
@@ -499,16 +506,23 @@ msgid "out of memory for new cleanup entry with many arguments"
 msgstr "記憶體不足，無法建立多參數的新清理項目"
 
 #: lib/dpkg/ehandle.c
+#, fuzzy
 msgid "unrecoverable fatal error, aborting"
-msgstr "無法恢復的重大錯誤，正在取消中"
+msgstr ""
+"%s：無法回復的嚴重錯誤，中止操作：\n"
+" %s\n"
 
 #: lib/dpkg/ehandle.c
+#, fuzzy
 msgid "outside error context, aborting"
-msgstr "處於錯誤字段之外，正在取消中"
+msgstr ""
+"%s：在錯誤相關處外，中止操作：\n"
+" %s\n"
 
 #: lib/dpkg/ehandle.c
+#, fuzzy
 msgid "internal error"
-msgstr "內部錯誤"
+msgstr "內部錯誤 (bug)"
 
 #: lib/dpkg/fields.c
 #, c-format
@@ -564,45 +578,49 @@ msgid "'%s' is not a valid architecture name: %s"
 msgstr "不合法的硬體平台名稱 '%s'：%s"
 
 #: lib/dpkg/fields.c
+#, fuzzy
 msgid "word in 'Priority' field"
-msgstr "「優先等級」欄位的文字"
+msgstr "`優先等級' 欄位的字串"
 
 #: lib/dpkg/fields.c
-#, c-format
+#, fuzzy, c-format
 msgid "value for '%s' field not allowed in this context"
-msgstr "「%s」欄位的值不允許存在於這個字段"
+msgstr "在此不能使用這個 `status' 欄位的值"
 
 #: lib/dpkg/fields.c
+#, fuzzy
 msgid "first (want) word in 'Status' field"
-msgstr "在 status 欄位的第一個字 (want)"
+msgstr "在 `status' 欄位的第一個字 (want)"
 
 #: lib/dpkg/fields.c
+#, fuzzy
 msgid "second (error) word in 'Status' field"
-msgstr "在 status 欄位的第二個字 (error)"
+msgstr "在 `status' 欄位的第二個字 (error)"
 
 #: lib/dpkg/fields.c
+#, fuzzy
 msgid "third (status) word in 'Status' field"
-msgstr "在 status 欄位的第三個字 (status)"
+msgstr "在 `status' 欄位的第三個字 (status)"
 
 #: lib/dpkg/fields.c
-#, c-format
+#, fuzzy, c-format
 msgid "error in '%s' field string '%.250s'"
-msgstr "「%s」欄位的字串「%.250s」中有錯誤"
+msgstr "版本字串 '%.250s' 有誤"
 
 #: lib/dpkg/fields.c
-#, c-format
+#, fuzzy, c-format
 msgid "obsolete '%s' or '%s' field used"
-msgstr "使用了已廢棄的「%s」或「%s」"
+msgstr "使用了已廢棄的 `Revision' 或 `Package-Revision' 欄位"
 
 #: lib/dpkg/fields.c
-#, c-format
+#, fuzzy, c-format
 msgid "value for '%s' field has malformed line '%.*s'"
-msgstr "「%s」欄位的值格式不正確「%.*s」"
+msgstr "`conffiles' 的值有行 `%.*s' 的格式錯誤了"
 
 #: lib/dpkg/fields.c
-#, c-format
+#, fuzzy, c-format
 msgid "value for '%s' has line starting with non-space '%c'"
-msgstr "「%s」的值有以使用非空白字元「%c」作為開頭的行"
+msgstr "`conffiles' 的值有行是以非空白字元 `%c' 開頭"
 
 #: lib/dpkg/fields.c
 msgid "root or null directory is listed as a conffile"
@@ -1385,7 +1403,8 @@ msgstr ""
 msgid ""
 "triggers ci file '%.250s' contains illegal trigger syntax in trigger name "
 "'%.250s': %.250s"
-msgstr "觸發程式 ci 檔 `%.250s' 的觸發程式名稱 `%.250s' 不合於觸發程式的語法：%.250s"
+msgstr ""
+"觸發程式 ci 檔 `%.250s' 的觸發程式名稱 `%.250s' 不合於觸發程式的語法：%.250s"
 
 #: lib/dpkg/triglib.c
 #, c-format
@@ -1549,7 +1568,8 @@ msgstr "無法取得（反引用）已存在的符號連結 `%.250s' 的檔案�
 msgid ""
 "failed to stat (dereference) proposed new symlink target '%.250s' for "
 "symlink '%.250s'"
-msgstr "無法取得（反引用）將要指向新符號連結 `%.250s' 的符號連結 `%.250s' 的檔案資訊"
+msgstr ""
+"無法取得（反引用）將要指向新符號連結 `%.250s' 的符號連結 `%.250s' 的檔案資訊"
 
 #: src/archives.c
 #, fuzzy, c-format
