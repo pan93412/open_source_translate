@@ -30,11 +30,6 @@ msgmerge -o ./output_file.po source_file.po pot_file.pot
 ### 翻譯需要多久的時間，才會上傳到程式的主分支？
 每一天會檢查一次 po 檔案，當 po 檔案翻譯到一定的水準時就會發 request 至程式原始庫。
 
-### `vdragon` 分支是？
-vdragon 為這個項目的貢獻人之一。而 vdragon 分支是他自己的翻譯進度。
-
-請勿發 PR 至該分支。
-
 ### master、guest 分支的差別？
 - master
 
