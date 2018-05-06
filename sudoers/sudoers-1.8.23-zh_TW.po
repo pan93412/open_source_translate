@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: sudo 1.8.23\n"
 "Report-Msgid-Bugs-To: https://bugzilla.sudo.ws\n"
 "POT-Creation-Date: 2018-04-05 06:36-0600\n"
-"PO-Revision-Date: 2018-05-05 17:08+0800\n"
+"PO-Revision-Date: 2018-05-06 13:58+0800\n"
 "Language-Team: zh-l10n@linux.org.tw\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2008,47 +2008,47 @@ msgstr ""
 #: plugins/sudoers/sudoreplay.c:1343
 #, c-format
 msgid "unknown search type %d"
-msgstr ""
+msgstr "未知搜尋類型 %d"
 
 #: plugins/sudoers/sudoreplay.c:1381
 #, c-format
 msgid "%s: invalid log file"
-msgstr ""
+msgstr "%s：無效的日誌檔案"
 
 #: plugins/sudoers/sudoreplay.c:1399
 #, c-format
 msgid "%s: time stamp field is missing"
-msgstr ""
+msgstr "%s：遺失時間戳欄位"
 
 #: plugins/sudoers/sudoreplay.c:1406
 #, c-format
 msgid "%s: time stamp %s: %s"
-msgstr ""
+msgstr "%s：時間戳 %s: %s"
 
 #: plugins/sudoers/sudoreplay.c:1413
 #, c-format
 msgid "%s: user field is missing"
-msgstr ""
+msgstr "%s：遺失使用者欄位"
 
 #: plugins/sudoers/sudoreplay.c:1422
 #, c-format
 msgid "%s: runas user field is missing"
-msgstr ""
+msgstr "%s：遺失 runas 使用者欄位"
 
 #: plugins/sudoers/sudoreplay.c:1431
 #, c-format
 msgid "%s: runas group field is missing"
-msgstr ""
+msgstr "%s：遺失 runas 群組欄位"
 
 #: plugins/sudoers/sudoreplay.c:1837
 #, c-format
 msgid "usage: %s [-hnR] [-d dir] [-m num] [-s num] ID\n"
-msgstr ""
+msgstr "可用指令：%s [-hnR] [-d 目錄] [-m 數字] [-s 數字] ID\n"
 
 #: plugins/sudoers/sudoreplay.c:1840
 #, c-format
 msgid "usage: %s [-h] [-d dir] -l [search expression]\n"
-msgstr ""
+msgstr "可用指令：%s [-h] [-d 資料夾] -l [搜尋表達式]\n"
 
 #: plugins/sudoers/sudoreplay.c:1849
 #, c-format
@@ -2056,6 +2056,8 @@ msgid ""
 "%s - replay sudo session logs\n"
 "\n"
 msgstr ""
+"%s - 重新顯示 sudo 工作階段日誌\n"
+"\n"
 
 #: plugins/sudoers/sudoreplay.c:1851
 msgid ""
@@ -2069,148 +2071,163 @@ msgid ""
 "  -s, --speed=num      speed up or slow down output\n"
 "  -V, --version        display version information and exit"
 msgstr ""
+"\n"
+"選項：\n"
+"  -d, --directory=dir  指定工作階段日誌的目錄\n"
+"  -f, --filter=filter  指定要顯示的 I/O 類型\n"
+"  -h, --help           顯示說明訊息後退出\n"
+"  -l, --list           列出可用的工作階段 ID 與可用的表達式\n"
+"  -m, --max-wait=num   等待事件的最長秒數\n"
+"  -s, --speed=num      加快或減慢輸出\n"
+"  -V, --version        檢視版本資訊後退出"
 
 #: plugins/sudoers/testsudoers.c:328
 msgid "\thost  unmatched"
-msgstr ""
+msgstr "\t主機 未符合"
 
 #: plugins/sudoers/testsudoers.c:331
 msgid ""
 "\n"
 "Command allowed"
 msgstr ""
+"\n"
+"指令被允許"
 
 #: plugins/sudoers/testsudoers.c:332
 msgid ""
 "\n"
 "Command denied"
 msgstr ""
+"\n"
+"指令被拒絕"
 
 #: plugins/sudoers/testsudoers.c:332
 msgid ""
 "\n"
 "Command unmatched"
 msgstr ""
+"\n"
+"指令未符合"
 
 #: plugins/sudoers/timestamp.c:229
 #, c-format
 msgid "%s is group writable"
-msgstr ""
+msgstr "%s 群組可寫"
 
 #: plugins/sudoers/timestamp.c:305
 #, c-format
 msgid "unable to truncate time stamp file to %lld bytes"
-msgstr ""
+msgstr "無法截短時間戳檔案至 %lld 位元組"
 
 #: plugins/sudoers/timestamp.c:792 plugins/sudoers/timestamp.c:884
 #: plugins/sudoers/visudo.c:477 plugins/sudoers/visudo.c:483
 msgid "unable to read the clock"
-msgstr ""
+msgstr "無法讀取這個時鐘"
 
 #: plugins/sudoers/timestamp.c:803
 msgid "ignoring time stamp from the future"
-msgstr ""
+msgstr "時間戳太遠：%20.20s"
 
 #: plugins/sudoers/timestamp.c:826
 #, c-format
 msgid "time stamp too far in the future: %20.20s"
-msgstr ""
+msgstr "時間戳已經離現在太遠：%20.20s"
 
 #: plugins/sudoers/timestamp.c:948
 #, c-format
 msgid "unable to lock time stamp file %s"
-msgstr ""
+msgstr "無法鎖定時間戳檔案 %s"
 
 #: plugins/sudoers/timestamp.c:992 plugins/sudoers/timestamp.c:1012
 #, c-format
 msgid "lecture status path too long: %s/%s"
-msgstr ""
+msgstr "告誡狀態位置過長：%s / %s"
 
 #: plugins/sudoers/visudo.c:212
 msgid "the -x option will be removed in a future release"
-msgstr ""
+msgstr "-x 選項將會在未來版本中移除"
 
 #: plugins/sudoers/visudo.c:213
 msgid "please consider using the cvtsudoers utility instead"
-msgstr ""
+msgstr "請考慮使用 cvtsudoers 工具程式替代"
 
 #: plugins/sudoers/visudo.c:263 plugins/sudoers/visudo.c:644
 #, c-format
 msgid "press return to edit %s: "
-msgstr ""
+msgstr "按 Return 以編輯 %s："
 
 #: plugins/sudoers/visudo.c:324
 #, c-format
 msgid "specified editor (%s) doesn't exist"
-msgstr ""
+msgstr "指定的編輯器（%s）不存在"
 
 #: plugins/sudoers/visudo.c:326
 #, c-format
 msgid "no editor found (editor path = %s)"
-msgstr ""
+msgstr "找不到任何編輯器（編輯器位置 = %s）"
 
 #: plugins/sudoers/visudo.c:436 plugins/sudoers/visudo.c:444
 msgid "write error"
-msgstr ""
+msgstr "寫入錯誤"
 
 #: plugins/sudoers/visudo.c:490
 #, c-format
 msgid "unable to stat temporary file (%s), %s unchanged"
-msgstr ""
+msgstr "無法統計暫存檔案 (%s)，%s 個未變更"
 
 #: plugins/sudoers/visudo.c:497
 #, c-format
 msgid "zero length temporary file (%s), %s unchanged"
-msgstr ""
+msgstr "零長度暫存檔案 (%s)，%s 個未變更"
 
 #: plugins/sudoers/visudo.c:503
 #, c-format
 msgid "editor (%s) failed, %s unchanged"
-msgstr ""
+msgstr "編輯器 (%s) 失敗，%s 個未變更"
 
 #: plugins/sudoers/visudo.c:525
 #, c-format
 msgid "%s unchanged"
-msgstr ""
+msgstr "%s 個未變更"
 
 #: plugins/sudoers/visudo.c:584
 #, c-format
 msgid "unable to re-open temporary file (%s), %s unchanged."
-msgstr ""
+msgstr "無法重新開啟暫存檔案 (%s)，%s 個未變更。"
 
 #: plugins/sudoers/visudo.c:596
 #, c-format
 msgid "unabled to parse temporary file (%s), unknown error"
-msgstr ""
+msgstr "無法解析暫存檔案（%s），未知錯誤"
 
 #: plugins/sudoers/visudo.c:633
 #, c-format
 msgid "internal error, unable to find %s in list!"
-msgstr ""
+msgstr "內部錯誤，無法在列表中找到 %s！"
 
 #: plugins/sudoers/visudo.c:713 plugins/sudoers/visudo.c:722
 #, c-format
 msgid "unable to set (uid, gid) of %s to (%u, %u)"
-msgstr ""
+msgstr "無法設定 %s 的 (uid, gid) 至 (%u, %u)"
 
 #: plugins/sudoers/visudo.c:744
 #, c-format
 msgid "%s and %s not on the same file system, using mv to rename"
-msgstr ""
+msgstr "%s 和 %s 不在同一個檔案系統上，使用 mv 重新命名"
 
 #: plugins/sudoers/visudo.c:758
 #, c-format
 msgid "command failed: '%s %s %s', %s unchanged"
-msgstr ""
+msgstr "指令錯誤：「%s %s %s」，%s 個未變更"
 
 #: plugins/sudoers/visudo.c:768
 #, c-format
 msgid "error renaming %s, %s unchanged"
-msgstr ""
+msgstr "重新命名 %s 時錯誤，%s 個未變更"
 
 #: plugins/sudoers/visudo.c:789
 msgid "What now? "
-msgstr ""
+msgstr "現在呢？"
 
 #: plugins/sudoers/visudo.c:803
 msgid ""
@@ -2219,56 +2236,60 @@ msgid ""
 "  e(x)it without saving changes to sudoers file\n"
 "  (Q)uit and save changes to sudoers file (DANGER!)\n"
 msgstr ""
+"選項包括\n"
+"  (e)dit 重新編輯 sudoers 檔案\n"
+"  e(x)it 不儲存 sudoers 檔案的變更就離開\n"
+"  (Q)uit 關閉與儲存變更至 sudoers 檔案（危險選項！）\n"
 
 #: plugins/sudoers/visudo.c:849
 #, c-format
 msgid "unable to run %s"
-msgstr ""
+msgstr "無法執行 %s"
 
 #: plugins/sudoers/visudo.c:879
 #, c-format
 msgid "%s: wrong owner (uid, gid) should be (%u, %u)\n"
-msgstr ""
+msgstr "%s：錯誤的擁有者 (uid, gid) 應該為 (%u, %u)\n"
 
 #: plugins/sudoers/visudo.c:886
 #, c-format
 msgid "%s: bad permissions, should be mode 0%o\n"
-msgstr ""
+msgstr "%s：錯誤的權限，應為 0%o 模式\n"
 
 #: plugins/sudoers/visudo.c:942 plugins/sudoers/visudo.c:949
 #, c-format
 msgid "%s: parsed OK\n"
-msgstr ""
+msgstr "%s：解析成功\n"
 
 #: plugins/sudoers/visudo.c:996
 #, c-format
 msgid "%s busy, try again later"
-msgstr ""
+msgstr "%s 正忙碌，稍候再試"
 
 #: plugins/sudoers/visudo.c:1036
 #, c-format
 msgid "Error: %s:%d cycle in %s \"%s\""
-msgstr ""
+msgstr "錯誤：%s:%d 在 %s \"%s\" 中循環"
 
 #: plugins/sudoers/visudo.c:1037
 #, c-format
 msgid "Warning: %s:%d cycle in %s \"%s\""
-msgstr ""
+msgstr "警告：%s:%d 在 %s \"%s\" 中循環"
 
 #: plugins/sudoers/visudo.c:1041
 #, c-format
 msgid "Error: %s:%d %s \"%s\" referenced but not defined"
-msgstr ""
+msgstr "錯誤：%s:%d %s \"%s\" 被參考但未被定義"
 
 #: plugins/sudoers/visudo.c:1042
 #, c-format
 msgid "Warning: %s:%d %s \"%s\" referenced but not defined"
-msgstr ""
+msgstr "警告：%s:%d %s \"%s\" 被參考但未被定義"
 
 #: plugins/sudoers/visudo.c:1135
 #, c-format
 msgid "Warning: %s:%d unused %s \"%s\""
-msgstr ""
+msgstr "警告：%s:%d 未使用的 %s \"%s\""
 
 #: plugins/sudoers/visudo.c:1250
 #, c-format
@@ -2276,6 +2297,8 @@ msgid ""
 "%s - safely edit the sudoers file\n"
 "\n"
 msgstr ""
+"%s - 安全的編輯 sudoers 檔案\n"
+"\n"
 
 #: plugins/sudoers/visudo.c:1252
 msgid ""
@@ -2288,7 +2311,15 @@ msgid ""
 "  -s, --strict             strict syntax checking\n"
 "  -V, --version            display version information and exit\n"
 msgstr ""
+"\n"
+"選項：\n"
+"  -c, --check              唯讀模式\n"
+"  -f, --file=sudoers       指定 sudoers 檔案位置\n"
+"  -h, --help               顯示說明訊息後退出\n"
+"  -q, --quiet              較少的詳細（大致的）錯誤訊息\n"
+"  -s, --strict             建構體語法檢查\n"
+"  -V, --version            顯示版本訊息後退出\n"
 
 #: toke.l:943
 msgid "too many levels of includes"
-msgstr ""
+msgstr "包含太多層"
